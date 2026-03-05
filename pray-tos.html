@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions – Pray</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --cream:        #F7F2F0;
+      --cream-light:  #FCFAF8;
+      --off-black:    #373330;
+      --off-black-60: rgba(55, 51, 48, 0.60);
+      --off-black-40: rgba(55, 51, 48, 0.40);
+      --teal:         #33A6A6;
+      --lavender:     #D0C0E0;
+      --stroke:       #D2CDC8;
+      --card:         #FFFFFF;
+    }
+
+    html {
+      background-color: var(--cream);
+      color: var(--off-black);
+      font-family: 'Avenir Next', 'Avenir', 'Century Gothic', 'Trebuchet MS', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 48px 20px 80px;
+      background-color: var(--cream);
+    }
+
+    /* ── Page wrapper ── */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header .logo-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      background-color: var(--card);
+      border-radius: 20px;
+      box-shadow: 0 2px 12px rgba(55, 51, 48, 0.10);
+      margin-bottom: 20px;
+    }
+
+    .header .logo-mark svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      color: var(--off-black);
+      margin-bottom: 6px;
+    }
+
+    .header .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 12px;
+    }
+
+    .header .effective-date {
+      font-size: 13px;
+      color: var(--off-black-40);
+    }
+
+    /* ── Card ── */
+    .card {
+      background-color: var(--card);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 2px 16px rgba(55, 51, 48, 0.07);
+      margin-bottom: 16px;
+    }
+
+    /* ── Section ── */
+    .section + .section {
+      margin-top: 36px;
+    }
+
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--off-black);
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid var(--stroke);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      background-color: var(--lavender);
+      color: var(--off-black);
+      font-size: 12px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--off-black-60);
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      font-size: 15px;
+      color: var(--off-black-60);
+      margin-bottom: 6px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    strong {
+      color: var(--off-black);
+      font-weight: 700;
+    }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background-color: var(--cream-light);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 12px 12px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+
+    .highlight p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* ── Third-party list ── */
+    .third-party-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-bottom: 12px;
+    }
+
+    .third-party-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .third-party-item .service-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--off-black);
+    }
+
+    .third-party-item a {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background-color: var(--cream-light);
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .contact-card p {
+      margin-bottom: 8px;
+    }
+
+    .contact-card a {
+      font-size: 15px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .footer p {
+      font-size: 13px;
+      color: var(--off-black-40);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .card {
+        padding: 28px 24px;
+        border-radius: 20px;
+      }
+
+      .header h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-mark">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4Z" fill="#F7F2F0"/>
+          <path d="M16 10v12M10 16h12" stroke="#33A6A6" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="app-name">Pray – Daily Prayer &amp; Journal</p>
+      <h1>Terms &amp; Conditions</h1>
+      <p class="effective-date">Effective date: March 5, 2025 &nbsp;·&nbsp; Twisted Society AB</p>
+    </header>
+
+    <!-- Main card -->
+    <div class="card">
+
+      <!-- Intro -->
+      <div class="section">
+        <p>
+          By downloading or using <strong>Pray – Daily Prayer &amp; Journal</strong>, you agree to these Terms &amp; Conditions. Please read them carefully. If you do not agree, do not use the app.
+        </p>
+        <div class="highlight">
+          <p>These terms form a binding legal agreement between you and <strong>Twisted Society AB</strong>, a company registered in Sweden.</p>
+        </div>
+      </div>
+
+      <!-- 1. Intellectual Property -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">1</span> Intellectual Property</h2>
+        <p>
+          Pray – Daily Prayer &amp; Journal and all of its content, features, and functionality (including but not limited to all graphics, user interfaces, text, and the selection and arrangement thereof) are owned by Twisted Society AB and are protected by applicable intellectual property laws.
+        </p>
+        <p>
+          You are granted a limited, non-exclusive, non-transferable licence to use the app for personal, non-commercial purposes. You may not:
+        </p>
+        <ul>
+          <li>copy, modify, or create derivative works of the app or its content</li>
+          <li>attempt to reverse engineer, decompile, or extract the app's source code</li>
+          <li>remove or alter any proprietary notices or labels</li>
+          <li>use any trademarks, logos, or service marks of Twisted Society AB without prior written permission</li>
+        </ul>
+      </div>
+
+      <!-- 2. AI-Generated Content -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">2</span> AI-Generated Content</h2>
+        <p>
+          Pray uses artificial intelligence to generate personalised prayers, devotional suggestions, and conversational responses. You acknowledge that:
+        </p>
+        <ul>
+          <li>AI-generated content is produced automatically and does not constitute professional spiritual, medical, legal, or psychological advice</li>
+          <li>the accuracy, completeness, or appropriateness of AI-generated prayers and responses cannot be guaranteed</li>
+          <li>you use AI-generated content at your own discretion and risk</li>
+        </ul>
+        <div class="highlight">
+          <p>Never rely on AI-generated content as a substitute for guidance from qualified spiritual leaders, medical professionals, or counsellors.</p>
+        </div>
+      </div>
+
+      <!-- 3. Journal & User Content -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">3</span> Journal &amp; User Content</h2>
+        <p>
+          The app allows you to create and store personal journal entries, custom prayers, and chat messages ("User Content"). You retain ownership of your User Content. By using the app, you grant Twisted Society AB a limited licence to process and store your User Content solely to operate and improve the service.
+        </p>
+        <p>
+          You are solely responsible for your User Content and agree not to submit content that is unlawful, harmful, harassing, or otherwise objectionable.
+        </p>
+      </div>
+
+      <!-- 4. Subscription & Payments -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">4</span> Subscription &amp; Payments</h2>
+        <p>
+          Certain features of Pray are available through a paid subscription ("Pray Premium"). Subscriptions are billed through the Apple App Store and are subject to Apple's own terms and conditions.
+        </p>
+        <ul>
+          <li><strong>Billing:</strong> your subscription renews automatically at the end of each billing period unless cancelled at least 24 hours before the renewal date.</li>
+          <li><strong>Free trial:</strong> if a free trial is offered, any unused portion of a trial period will be forfeited when you purchase a subscription.</li>
+          <li><strong>Cancellation:</strong> you may manage or cancel your subscription at any time through your Apple ID account settings. No refunds are provided for partially used subscription periods, except where required by law.</li>
+          <li><strong>Price changes:</strong> we reserve the right to change subscription pricing at any time. We will notify you in advance of any changes that affect your active subscription.</li>
+        </ul>
+      </div>
+
+      <!-- 5. Device & Security -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">5</span> Device &amp; Security</h2>
+        <p>
+          We strongly advise against jailbreaking or rooting your device. Doing so removes security restrictions and may expose your device and personal data to vulnerabilities. Pray may not function correctly on jailbroken or rooted devices.
+        </p>
+        <p>
+          You are responsible for keeping your device and access credentials secure.
+        </p>
+      </div>
+
+      <!-- 6. Third-Party Services -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">6</span> Third-Party Services</h2>
+        <p>
+          Pray integrates third-party services that operate under their own terms and policies. By using the app, you also agree to be bound by the applicable terms of these providers:
+        </p>
+
+        <div class="third-party-item">
+          <span class="service-name">OpenAI</span>
+          <span><a href="https://openai.com/policies/terms-of-use" target="_blank" rel="noopener">openai.com/policies/terms-of-use</a></span>
+        </div>
+        <div class="third-party-item">
+          <span class="service-name">Google Firebase (Realtime Database)</span>
+          <span><a href="https://firebase.google.com/terms" target="_blank" rel="noopener">firebase.google.com/terms</a></span>
+        </div>
+        <div class="third-party-item">
+          <span class="service-name">Firebase Crashlytics</span>
+          <span><a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener">firebase.google.com/terms/crashlytics</a></span>
+        </div>
+        <div class="third-party-item">
+          <span class="service-name">Google Analytics for Firebase</span>
+          <span><a href="https://marketingplatform.google.com/about/analytics/terms/us/" target="_blank" rel="noopener">marketingplatform.google.com/about/analytics/terms/us/</a></span>
+        </div>
+
+        <p style="margin-top: 16px;">
+          Twisted Society AB is not responsible for the practices of these third-party providers.
+        </p>
+      </div>
+
+      <!-- 7. Notifications -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">7</span> Notifications</h2>
+        <p>
+          Pray may send you push notifications for daily prayer reminders and other app-related updates. You can manage your notification preferences at any time through your device's system settings.
+        </p>
+      </div>
+
+      <!-- 8. Connectivity & Charges -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">8</span> Connectivity &amp; Charges</h2>
+        <p>
+          Some features of Pray require an active internet connection. Twisted Society AB is not responsible for the app failing to function at full capacity if you do not have access to Wi-Fi or mobile data.
+        </p>
+        <p>
+          If you use the app outside your home Wi-Fi network, your mobile carrier's data terms apply. You are responsible for any data charges, including roaming charges, that result from using Pray.
+        </p>
+      </div>
+
+      <!-- 9. Limitation of Liability -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">9</span> Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by applicable law, Twisted Society AB shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use Pray, including but not limited to:
+        </p>
+        <ul>
+          <li>loss of data or User Content</li>
+          <li>interruption of service</li>
+          <li>errors or inaccuracies in AI-generated content</li>
+          <li>third-party actions or data practices</li>
+        </ul>
+        <p>
+          Pray is provided "as is" and "as available" without warranties of any kind, either express or implied.
+        </p>
+      </div>
+
+      <!-- 10. Updates & Discontinuation -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">10</span> Updates &amp; Discontinuation</h2>
+        <p>
+          We may update Pray periodically to improve the experience, add features, or address security issues. We may also discontinue the app or any part of it at any time without notice. Continued use of the app after an update constitutes your acceptance of any revised terms.
+        </p>
+      </div>
+
+      <!-- 11. Governing Law -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">11</span> Governing Law</h2>
+        <p>
+          These Terms &amp; Conditions are governed by and construed in accordance with the laws of Sweden, without regard to its conflict of law provisions. Any disputes arising from or relating to these terms shall be subject to the exclusive jurisdiction of the courts of Sweden.
+        </p>
+      </div>
+
+      <!-- 12. Changes to Terms -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">12</span> Changes to These Terms</h2>
+        <p>
+          We reserve the right to update these Terms &amp; Conditions at any time. We will notify you of material changes by updating the effective date at the top of this page. Your continued use of the app after any changes constitutes your acceptance of the new terms.
+        </p>
+      </div>
+
+      <!-- 13. Contact -->
+      <div class="section">
+        <h2 class="section-title"><span class="num">13</span> Contact Us</h2>
+        <p>
+          If you have questions or concerns about these Terms &amp; Conditions, please reach out to us.
+        </p>
+        <div class="contact-card">
+          <p><strong>Twisted Society AB</strong></p>
+          <a href="mailto:twistedsocietyab@gmail.com">twistedsocietyab@gmail.com</a>
+        </div>
+      </div>
+
+    </div><!-- /.card -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Twisted Society AB &nbsp;·&nbsp; <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+
+  </div><!-- /.page -->
+</body>
+</html>
