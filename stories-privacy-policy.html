@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Story Genie</title>
+<style>
+  :root { color-scheme: light dark; --ink: #171717; --mute: #5b6170; --link: #02214d; --bg: #ffffff; --rule: #e3e6ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f2f3f5; --mute: #a3a9b6; --link: #9db8e8; --bg: #14161a; --rule: #2a2e36; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  h3 { font-size: 17px; margin: 24px 0 4px; }
+  a { color: var(--link); }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p><strong>Last updated: 9 November 2026</strong></p>
+<p>This policy covers the Story Genie iOS app published by Twisted Society AB. Story Genie writes illustrated bedtime stories from an idea you type or say, and can read them aloud.</p>
+
+<h2>The short version</h2>
+<p>The app has no accounts, no sign-in, no ads, no analytics and no tracking. Your stories are kept on your device. To write a story, the app sends your story idea, the child's age group and the story's language to a small server of ours. The server passes them to Anthropic, whose Claude model writes the story, and to OpenAI, which draws the cover and reads the story aloud. Our server keeps no copy of any of it. The only thing we ever store about you is feedback you choose to send us.</p>
+
+<h2>What stays on your device</h2>
+<p>The following is stored only in the app's private storage on your iPhone or iPad:</p>
+<ul>
+<li>Your stories: each one's title, chapters, cover picture and the idea it was written from</li>
+<li>Narration audio that has already been made, so a story plays again without being sent anywhere</li>
+<li>Your settings: the child's age group, the app's language and the narrator voice you chose</li>
+</ul>
+<p>This data is included in your device backup if you back up your device (an Apple service governed by Apple's privacy policy, not ours). <strong>Deleting a story deletes it, its cover and its audio; deleting the app deletes everything</strong>. We hold no copy and cannot restore it.</p>
+
+<h2>What leaves your device, and why</h2>
+<p>Only what is needed to make the story you asked for, at the moment you ask for it.</p>
+<h3>Writing a story</h3>
+<p>When you ask for a story, the app sends your story idea, the child's age group (one number, such as 4 for the 3–5 group) and the story's language to our server. The server sends them to <strong>Anthropic</strong>, whose Claude model does two things: it checks that the idea is suitable for a children's story, and it plans and writes the story. If the idea isn't suitable, the app shows a gentle message instead of a story.</p>
+<h3>Drawing the cover</h3>
+<p>Claude writes a short description of the cover picture. Our server sends that description, with the age group and language, to <strong>OpenAI</strong>, whose image model draws the cover. If that fails, your story idea itself is sent in its place.</p>
+<h3>Reading the story aloud</h3>
+<p>When you listen to a story, our server sends one chapter's text at a time to <strong>OpenAI</strong>, with the narrator voice you chose and the language, and OpenAI returns the spoken audio.</p>
+<p>No name, email address, account, device identifier or location is sent with any of these requests. Anthropic's handling is governed by <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a> and OpenAI's by <a href="https://openai.com/policies/privacy-policy">OpenAI's privacy policy</a>, together with their terms for business use of their services. Under those terms, neither uses what we send them to train its models by default. They may keep requests for a limited time to detect and prevent misuse, as their policies describe.</p>
+<p><strong>Please keep personal information out of story ideas.</strong> There is no need to include a child's full name, address, school or anything else identifying. A first name or a pet's name makes a lovely story on its own.</p>
+
+<h3>Our server</h3>
+<p>The server is one function we run on Google's Firebase, in the United States. It holds the keys to Anthropic's and OpenAI's services, so the app does not have to, and it limits how many stories, covers and narrations can be made each day. With each request it receives:</p>
+<ul>
+<li><strong>The content described above</strong>, which it passes on and does not store or log.</li>
+<li><strong>A proof from Apple's App Attest</strong>, checked by Google's Firebase App Check, that the request comes from the genuine app on a real device. It contains no personal information.</li>
+</ul>
+<p>What the server keeps is a count: how many plans, stories, covers and narrations were made in total each day, shared by everyone and filed under nobody. Its logs record what kind of request it was, whether it worked, how long it took and how much text was processed, never what was asked or written. Google, which runs the server, sees the network address a request comes from, as any web host does, under <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud's privacy notice</a>.</p>
+
+<h3>Speaking your story idea</h3>
+<p>If you tap the microphone to say your idea instead of typing it, the app uses Apple's speech recognition to turn it into text. Where your device supports it, this happens entirely on the device. Otherwise Apple processes the recording under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. The app does not keep or send the recording; only the resulting text is used, as described above.</p>
+
+<h2>Feedback you send us</h2>
+<p>If you tell the app you aren't enjoying it, it offers a feedback form. If you send it, we receive your message, the email address if you choose to give one, the app's version and language, and your iOS version. It is stored in Google's Firebase so that we can read it, reply if you asked us to, and improve the app. We keep it only as long as it is useful for that, and you can ask us to delete it at any time. If you are happy with the app, it may instead show Apple's own rating prompt, which Apple handles.</p>
+
+<h2>Notifications</h2>
+<p>The app may ask whether it can send you notifications. Your choice is kept by your device, and no notification address or token is sent to us.</p>
+
+<h2>Purchases</h2>
+<p>Story Genie is currently free. If we offer a subscription in the future, it will be purchased through the App Store under Apple's terms and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. We never receive your name, Apple Account or payment details; the app learns whether you are subscribed by asking Apple's StoreKit framework on your device.</p>
+
+<h2>What we do not do</h2>
+<ul>
+<li>We do not track you across apps or websites.</li>
+<li>We do not use analytics or crash-reporting SDKs.</li>
+<li>We do not show ads.</li>
+<li>We do not sell, rent or share data for anyone's marketing.</li>
+<li>We do not use your stories or ideas to train any AI model.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Story Genie is made for families to enjoy with their children. It has no accounts, no ads and no tracking, and it does not ask for a child's name, photo, location or any contact details. Story ideas are passed on only to write the story and are not stored by us. The feedback form is meant for parents; if you believe a child has sent us personal information through it, contact us and we will delete it.</p>
+
+<h2>Your rights</h2>
+<p>Apart from feedback you send us, we hold no data that identifies you, so there is nothing else for us to disclose, correct, export or delete on request. Your stories are on your device and under your control. For feedback, email us and we will show you, correct or delete what we have.</p>
+<p>If you are in the EEA or UK: we process your story idea and the related details above only to make the story you asked for, and feedback only to respond to it and improve the app. Our server and Anthropic and OpenAI are in the United States, and we use them under their data processing terms.</p>
+
+<h2>Generated content</h2>
+<p>Stories, covers and narration are written and made by AI models. The app instructs them to keep everything gentle and suitable for the child's age, and checks each idea first, but AI can make mistakes. We recommend that a grown-up stays nearby, especially with younger children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes materially, the date above will change and the new version will be published at this address before the change takes effect in the app.</p>
+
+<h2>Contact</h2>
+<p><strong>Twisted Society AB</strong><br>Email: <a href="mailto:twistedsocietyab@gmail.com">twistedsocietyab@gmail.com</a></p>
+</main>
+</body>
+</html>
