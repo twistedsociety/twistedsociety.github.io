@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How our AI works · BibleChat</title>
+<meta name="description" content="What BibleChat&#x27;s AI does, how it quotes Scripture, and how it keeps you safe.">
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #1d1b18; --muted: #5f5a52; --line: #e4dfd5; --accent: #6b4e16; --card: #ffffff;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #151413; --fg: #ece8e1; --muted: #a8a196; --line: #2e2b27; --accent: #d9b56b; --card: #1d1b19; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+header { border-block-end: 1px solid var(--line); }
+header .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding-block: 14px; }
+header a.brand { font-weight: 700; font-size: 19px; color: var(--fg); text-decoration: none; margin-inline-end: auto; }
+nav a { color: var(--muted); text-decoration: none; font-size: 15px; margin-inline-end: 14px; }
+nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
+main { padding-block: 28px 48px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--fg); }
+.lede { font-size: 19px; color: var(--muted); }
+.updated { color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+ul { padding-inline-start: 22px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 20px 0; }
+.alert { border-color: #c0392b; }
+.button {
+  display: inline-block; background: var(--fg); color: var(--bg); text-decoration: none; font-weight: 600;
+  padding: 12px 22px; border-radius: 12px; margin: 6px 8px 6px 0;
+}
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: start; border-block-end: 1px solid var(--line); padding: 8px 6px; vertical-align: top; }
+footer { border-block-start: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+footer .wrap { padding-block: 20px 36px; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="./">BibleChat</a><nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="ai.html" aria-current="page">How our AI works</a><a href="support.html">Support</a></nav></div></header>
+<main class="wrap">
+<h1>How our AI works</h1>
+<p class="updated">Last updated 16 November 2026</p>
+<p class="lede">BibleChat is an AI Christian companion. It is here to talk with you, pray with you and help you live your faith, not to replace God's Word, your church, or the people in your life.</p>
+
+<h2>The model</h2>
+<p>Everything BibleChat says is written by Claude, a family of AI models made by Anthropic, for you in the moment: answers, your daily brief, journeys, guided prayers and traditional prayers in your language. The app never talks to Anthropic directly: your message goes to our servers, which add the right instructions and your personal context, ask the model, check the answer and stream it back. We choose the model per task (a fast one for everyday chat, a stronger one for deep study), and every change is tested before it reaches you.</p>
+
+<h2>How it quotes Scripture</h2>
+<ul>
+<li>BibleChat doesn't store or host Bible texts. When it quotes a verse, the AI quotes from its knowledge of a well-known open translation in your language (the "Bible wording" you chose, such as the Berean Standard Bible, Reina-Valera 1909 or Luther 1912) and names that translation.</li>
+<li>Every reference is checked before you see it: the book, chapter and verses must exist. References that don't are removed.</li>
+<li>Because the wording comes from the AI's memory, it can occasionally differ from the printed translation. If a quote looks off, tap it to see the whole passage in BibleChat, or report the answer.</li>
+</ul>
+
+<h2>Within the Christian faith, respectful of traditions</h2>
+<p>The AI speaks from within historic Christian faith, with the Apostles' and Nicene Creeds as common ground. You can choose your tradition (for example Catholic, Orthodox, Anglican, Lutheran, Reformed, Baptist, Methodist, Pentecostal or non-denominational). Where Christians disagree, such as baptism, communion, Mary and the saints or the end times, it explains the main views fairly and then what your tradition teaches. It never speaks as God or Jesus, never claims new revelation, and says when the Bible doesn't directly answer something.</p>
+
+<h2>It's personal, and private</h2>
+<p>BibleChat adapts to you: the answer style you chose or that it learned, the topics you care about, your tradition, your season of life and, if you allow it, short memories of what you've shared. This profile lives on your devices; only what a request needs is sent with it. You can see and erase what it has learned and what it remembers in Settings.</p>
+
+<h2>What it won't do</h2>
+<ul>
+<li>Replace your pastor, priest or church community. It will often encourage you to talk with them.</li>
+<li>Give medical, psychological, legal or financial advice in place of a professional.</li>
+<li>Take political sides, or attack other religions.</li>
+<li>Produce sexual or hateful content.</li>
+</ul>
+
+<h2>Safety</h2>
+<p>Every message is checked for signs of crisis, abuse, self-harm or danger. When there is a risk, the AI answers with care, encourages you to reach out to someone now, and the app shows helplines for your country. Read our <a href="crisis-protocol.html">crisis protocol</a>. BibleChat is for people 13 and older (older in some countries). With teenagers the AI takes extra care: it encourages them to talk with a parent or another trusted adult, and shows help sooner.</p>
+
+<h2>If you are a teenager</h2>
+<p>BibleChat is an AI, not a person, a pastor or a counselor. It can be wrong, so check what matters with someone you trust. Don't share passwords, your address or photos of yourself. If something is heavy or someone is hurting or pressuring you, tell a parent or another adult you trust; BibleChat will always encourage that and will never ask you to keep a conversation secret. Take breaks.</p>
+
+<h2>Your data</h2>
+<p>We send your message and the context needed to answer it to Anthropic only after you agree. Our servers don't store your conversations, and Anthropic doesn't use them to train its models. Details are in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>If an answer is wrong</h2>
+<p>AI can make mistakes. Report an answer from its menu; we review reports to improve BibleChat. You can also write to <a href="mailto:twistedsociety@mzr.se">twistedsociety@mzr.se</a>.</p>
+</main>
+<footer><div class="wrap">© 2026 Twisted Society AB · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="subscription-terms.html">Subscription terms</a> · <a href="crisis-protocol.html">Crisis protocol</a> · <a href="mailto:twistedsociety@mzr.se">twistedsociety@mzr.se</a></div></footer>
+</body>
+</html>
