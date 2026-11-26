@@ -51,8 +51,8 @@ footer a { color: var(--muted); }
 <header><div class="wrap"><a class="brand" href="./">BibleChat</a><nav><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="ai.html">How our AI works</a><a href="support.html">Support</a></nav></div></header>
 <main class="wrap">
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated 25 November 2026</p>
-<p class="lede">Short version: your conversations, memories and what BibleChat learns about you stay on your devices and in your own iCloud. We send your messages to our AI provider only to answer them, and only after you agree. We don't sell data, don't show ads and don't track you across apps.</p>
+<p class="updated">Last updated 26 November 2026</p>
+<p class="lede">Short version: your conversations, memories and what BibleChat learns about you stay on your devices and in your own iCloud. We send what you ask to our AI provider, Anthropic, only to answer it, and only after you tap Allow on the in-app permission screen (<a href="#ai">details</a>). We don't sell data, don't show ads and don't track you across apps.</p>
 
 <h2>Who we are</h2>
 <p>BibleChat is made by Twisted Society AB, a company registered in Sweden ("we", "us"). We are the controller of the personal data described here. Contact: <a href="mailto:twistedsociety@mzr.se">twistedsociety@mzr.se</a>.</p>
@@ -62,8 +62,7 @@ footer a { color: var(--muted); }
 <p>When you first open the app we create an anonymous account with a random identifier, so we can apply your plan, daily message limits and gifts. If you choose Sign in with Apple, we also receive the name and email address Apple shares (which may be a private relay address). Basis: performing our contract with you.</p>
 
 <h3>Messages you send to the AI</h3>
-<p>When you chat or use other AI features (daily brief, journeys, guided prayer, passage quotes, photo questions), the app sends your message, the recent conversation and the context needed for a good answer to our servers, which pass it to our AI provider, Anthropic, and stream the answer back. That context can include your language, preferred Bible wording, tradition, first name if you gave one, the memories most relevant to the message, and the answer style and interests BibleChat has learned. Our servers do not store your conversations or anything the AI writes for you. Anthropic does not use this data to train models and, under its API data policy, does not keep it after answering, except content its systems flag for safety, which it may keep for up to two years for trust and safety purposes.</p>
-<p>Because your messages can reveal your religious beliefs, which is a special category of personal data, we ask for your explicit consent before your first AI message (GDPR Article 9(2)(a), and equivalent rules elsewhere). You can withdraw it at any time in Settings &gt; Privacy and data; AI features then stay off.</p>
+<p>Your questions and other AI requests are sent to our AI provider, Anthropic, only after you allow it. What is sent, how, why and how it is protected is described in <a href="#ai">AI features and Anthropic</a> below.</p>
 
 <h3>What BibleChat learns about you</h3>
 <p>To make BibleChat personal, the app keeps a small profile on your device: topics you care about, the tone and length of answers you prefer, the times you usually open the app and the guides you like. It shapes your greeting, daily brief, suggestions, reminder time and how the AI answers. It is calculated and stored only on your devices (and your iCloud, if sync is on); only the parts a request needs are sent with that request. See and erase it in Settings &gt; What BibleChat has learned.</p>
@@ -98,10 +97,41 @@ footer a { color: var(--muted); }
 <h3>No Bible or content hosting</h3>
 <p>We don't host Bible texts or any other content library. Verses in answers are quoted by the AI.</p>
 
+<h2 id="ai">AI features and Anthropic</h2>
+<p>BibleChat's answers, guided prayers, journeys, daily briefs, journal reflections, passage explanations and quotes are written by Claude, an AI model made by <strong>Anthropic, PBC</strong> (United States), a third-party AI service. This section explains exactly what we share with Anthropic.</p>
+
+<h3>Your permission comes first</h3>
+<p>Before anything is sent to Anthropic, the app shows a screen ("Share your data with Anthropic?") that says what is sent, who receives it and why, with two choices: <strong>Allow</strong> and <strong>Don't allow</strong>. Nothing is sent until you tap Allow. If you don't allow it, AI features stay off; the app asks again when you use one, and you can allow it later. You can see what you chose and withdraw it at any time in Settings &gt; Privacy and data &gt; AI data sharing. After you withdraw, nothing more is sent. If you agreed in an earlier version of the app, we ask you again on this screen.</p>
+
+<h3>What is sent</h3>
+<ul>
+<li>Your messages in chat, including text you dictate, the recent conversation for context, and a short summary of older parts of a long conversation.</li>
+<li>Photos you add to a question.</li>
+<li>Journal entries you ask for a word back on, and, for the monthly look back, short excerpts of that month's entries and prayers. Entries marked "Just for me" are never sent.</li>
+<li>Bible passages you ask about or open to read.</li>
+<li>Context that makes answers personal: your first name if you gave one, your language, preferred Bible wording, church tradition, faith stage, goals, preferred answer style, the interests BibleChat has learned, "teenager" if you said you are under 18, the memories most relevant to the request (if memory is on), recent topics, and the date and your time zone.</li>
+</ul>
+<p>We don't send your Apple ID, email address, device identifiers, location, contacts or payment details to Anthropic. Each request carries only a one-way coded identifier derived from your anonymous account, which Anthropic uses to detect abuse; it does not reveal who you are.</p>
+
+<h3>How it is collected and sent</h3>
+<p>You provide this data by typing or dictating, adding a photo, writing in your journal and answering the setup questions. The app adds the context above from data stored on your device. It sends each request over an encrypted connection to our server (Google Cloud), which checks that it comes from the genuine app, passes it to Anthropic's API and streams the answer back. Our server does not store the content of requests or answers; it keeps only counts used for daily limits.</p>
+
+<h3>What it is used for</h3>
+<ul>
+<li>Writing the answer, prayer, journey, reflection, explanation or quote you asked for, and your daily brief and suggestions.</li>
+<li>Summarizing long conversations so answers keep their context.</li>
+<li>Suggesting short memories to keep on your device, if "Remember what I share" is on.</li>
+<li>Checking messages for signs of crisis or danger so the app can show helplines (see Safety checks above).</li>
+</ul>
+<p>It is not used for advertising, it is not sold, and neither we nor Anthropic use it to train AI models. Legal basis: your consent (GDPR Article 6(1)(a) and, because faith is special-category data, Article 9(2)(a)).</p>
+
+<h3>How Anthropic protects it</h3>
+<p>Anthropic processes this data only on our behalf, as our processor and service provider, under its Commercial Terms of Service and Data Processing Addendum. These require Anthropic to protect personal data with the same or equal protection as this policy: it may use the data only to provide the service to us, must keep it confidential and secure, may not sell it or use it to train its models, and must help us honor your rights. Transfers to the United States are covered by the EU-US Data Privacy Framework and the Standard Contractual Clauses in that addendum. Anthropic deletes API requests and answers automatically within 30 days, except content its systems flag for violating its usage policies, which it may keep for up to two years for trust and safety, or where the law requires longer.</p>
+
 <h2>Who we share data with</h2>
 <p>Only service providers who process data for us under data-processing terms:</p>
 <ul>
-<li>Anthropic (United States): AI answers.</li>
+<li>Anthropic, PBC (United States): writes AI answers, only after you allow it (<a href="#ai">details</a>).</li>
 <li>Google Cloud and Firebase: our servers, accounts and database.</li>
 <li>PostHog (EU): usage statistics, if allowed.</li>
 <li>Apple: Sign in with Apple, App Store purchases, iCloud sync and notifications.</li>
@@ -112,7 +142,7 @@ footer a { color: var(--muted); }
 <ul>
 <li>Account, plan and gift data, and old invite records: until you delete your account.</li>
 <li>Shared conversations: until you remove the link or delete your account.</li>
-<li>AI requests: not stored by us; see above for Anthropic.</li>
+<li>AI requests: not stored by us; Anthropic deletes them within 30 days (<a href="#ai">details</a>).</li>
 <li>Reported answers: 90 days.</li>
 <li>Usage statistics: up to 24 months.</li>
 <li>Purchase records: as long as accounting law requires (in Sweden, seven years).</li>
